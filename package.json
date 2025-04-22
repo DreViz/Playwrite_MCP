@@ -1,0 +1,20 @@
+{
+  "name": "mcp-playwright",
+  "version": "1.0.0",
+  "description": "MCP Playwright Testing Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "mcp": "npx -y @executeautomation/playwright-mcp-server"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.40.0",
+    "@executeautomation/playwright-mcp-server": "latest"
+  },
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@executeautomation/playwright-mcp-server"]
+    }
+  }
+}
